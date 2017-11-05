@@ -1,0 +1,94 @@
+@mixin typo ($color: #505050,$sub-color: darkgray, $background-color: LightSteelBlue,$font-family:"Lucida Sans Typewriter" ,$extension: monospace,$footercolor: white,$footerback: dodgerblue,$headerback:HoneyDew ){
+  body{
+
+  	color :$color;
+  	font-family :$font-family,$extension;
+  	font-size : 1em;
+    min-height: 100%;
+    margin-bottom: -110px;
+    &:after{
+      content:"";
+      display: block;
+    }
+  }
+  h1, h2, h3, h4, h5, h6{
+  	color:black;
+  	font-style: bold;
+    font-size: 2em;
+  	font-family:$font-family,$extension;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+  }
+  p{
+  	margin-bottom:0.5em;
+  }
+  del{
+  	text-decoration: line-through;
+  }
+  u{
+  	text-decoration:underline;
+  }
+  strong{
+  	font-weight: bold;
+  	color:black;
+  }
+  small,.subtitle{
+    font-size: 0.8em;
+    color:$sub-color;
+  }
+  em{
+  	font-style: italic;
+  	color:black;
+  }
+  mark{
+  	background-color:$background-color;
+  	color:$color;
+  }
+  abbr{
+    display: inline;
+    cursor:help;
+  }
+  abbr:hover::after {
+  	color:$background-color;
+      position: absolute;
+      bottom: 100%;
+      left: 100%;
+      display: block;
+      padding: 1em;
+      content: attr(title);
+  }
+  header{
+    height:350px;
+    background-color: $headerback;
+    h1,h2,h3,h4,h5,h6,.subtitle{
+      font-size:3em;
+    }
+      @media only screen and (max-width: 800px) and (min-width: 440px) {
+        height:250px;
+        h1,h2,h3,h4,h5,h6,.subtitle{
+          font-size:1.5em;
+        }
+      }
+      @media only screen and (max-width: 440px) {
+        height:250px;
+        h1,h2,h3,h4,h5,h6,.subtitle{
+          font-size:1em;
+        }
+      }
+      margin-top:55px;
+      margin-bottom: 1em;
+}
+footer {
+  background:$footerback;
+  color:$footercolor;
+  width:100%;
+  padding-top:50px;
+  height:50px;
+@media only screen and (max-width: 500px){
+    font-size:0.5em;
+  }
+}
+}
+
+
+/* text decoration */

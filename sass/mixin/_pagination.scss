@@ -1,0 +1,52 @@
+@mixin pagination($margin-top:1em ,$margin-bottom: 1em,$hover-color: white,$color: #505050, $background-color-hover: deepskyblue, $background-color-ac:dodgerblue) {
+  margin-top:$margin-top;
+  margin-bottom:$margin-bottom;
+    text-align: center;
+    padding: 0;
+    li {
+        display: inline-block;
+        a {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: $color;
+            -webkit-transition: background-color .3s ease, color .3s ease;
+            &:hover {
+                color: $hover-color;
+                background-color: $background-color-hover;
+            }
+
+        }
+
+    }
+    .prev:before {
+      content: "« ";
+      font-weight: normal;
+    }
+    .next:after {
+      content: " »";
+      font-weight: normal;
+    }
+    .active {
+        a {
+            color: $hover-color;
+            background-color: $background-color-ac;
+            &:hover {
+                background-color: $background-color-ac;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+     a{
+      display: none;
+     }
+     .active a{
+      display:inline;
+     }
+     .prev{
+      display: inline;
+     }
+     .next{
+      display: inline;
+     }
+}
+}

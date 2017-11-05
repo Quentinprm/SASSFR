@@ -1,0 +1,45 @@
+@mixin btn-struct($size:1em,$padding: 0.5em 3em,$weight:400){
+  width:auto;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  padding:$padding;
+   margin:0 0.3em 0.3em 0;
+   box-sizing:border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: $weight;
+  text-align: center;
+  transition: all 0.15s;
+  a{
+    text-decoration: none;
+    font-size: $size;
+  }
+}
+
+@mixin btn-color($border-color: black,$active-color: LightSteelBlue,$hover-color: #DDDDDD){
+  background-color:transparent;
+  border:0.16em solid $border-color;
+  color:$border-color;
+  a{
+    color:$border-color;
+  }
+  &:hover{
+    color:$hover-color;
+    border-color:$hover-color;
+    a{
+      color:$hover-color;
+    }
+  }
+
+  &:active{
+    color:$active-color;
+    border-color:$active-color;
+  }
+}
+@mixin btn-disabled{
+    cursor: not-allowed;
+    a {
+        cursor: not-allowed;
+    }
+}

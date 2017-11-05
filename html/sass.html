@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SASSFR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <header>
+    <div class="menu">
+      <nav id="menu" class="navbar navbar-default">
+      <div class="container">
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li ><a href="home.html">Acceuil</a></li>
+            <li class="active"><a href="sass.html">SASS</a></li>
+            <li><a href="css.html">CSS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="rack">
+      <div class="column-l-12"><h1>Documentation SASS</h1></div>
+      <div class="column-l-12"><p class ="subtitle">retrouver ici la documentation dans sa version SASS du framework</p></div>
+      <div class="column-l-12">
+        <button class="btn-red">
+         <a href="../sources/sass.zip">Télécharger .zip en sass</a>
+         </button>
+      </div>
+    </div>
+  </div>
+  </header>
+  <body>
+    <div class="rack">
+      <div class="column-l-12"><h2>La Grille</h2></div>
+      <div class="column-l-12"><p>il s'agit d'une grille responsive de 12 colonnes qui se redimensionne en fonction de la taille de l'écran et de la classe choisie.</p><p>On choisit le style de colonne avec s,m,l(small,medium,large)et le nombre des 12 colonne qu'on prend.</p><p>Ici on a column-l-12 ce qui veut dire une colonne de type large qui prendra la place de 12 sur la grille en largeur</p></p>on peu ajouter un décallage à droite ou à gauche de la colonne avec les classes offset-left et offset-right en donnant de la meme façon le nombre de colonne de décalage en largeur</p>
+      <h3>importer les mixin</h3>
+      <div class="gallery">
+        <div class="elem">
+          <img src="../img/gridmixin.png">
+        </div>
+        </div>
+        <p>vous pouvez modifier le comportement de la grille en changeant les valeurs des variables dans les entete des mixin </p>
+        <h3>rack</h3>
+        <p> ce mixin construit la ligne <p>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/rack.png">
+            </div>
+            </div>
+
+            <h3>column</h3>
+            <p> ce mixin construit les colonnes<p>
+              <div class="gallery">
+                <div class="elem">
+                  <img src="../img/column.png">
+                </div>
+                </div>
+                <h3>offset</h3>
+                <p> ces mixin permettent le décalage des colonnes<p>
+                  <div class="gallery">
+                    <div class="elem">
+                      <img src="../img/offset.png">
+                    </div>
+                    </div>
+                    <h3>generategrid</h3>
+                    <p> ces mixin permet de construire la grille vous pouvez y modifier le nombre de colonnes<p>
+                      <div class="gallery">
+                        <div class="elem">
+                          <img src="../img/generategrid.png">
+                        </div>
+                        </div>
+
+      </div>
+
+
+      <div class="column-l-12"><h2>Le Menu</h2></div>
+      <div class="column-l-6"><p>il s'agit d'un menu responsive qui se redimensionne en fonction de la taille de l'écran</p><p> il s'agit du menu utilisé sur ce site</p><p> il ne faut pas oublier d'inserer les 2 imports pour le menu déroulant</p>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/navscript.png">
+          </div>
+        </div>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/navmixin.png">
+          </div>
+          </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/navsass.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Les boutons</h2>
+
+      </div>
+      <div class="column-l-6"><h3>importer le mixin</h3>
+      <div class="gallery">
+        <div class="elem">
+          <img src="../img/btnmixin.png">
+        </div>
+        </div>
+        <div>
+
+      </div>
+      </div>
+      <div class="column-l-6">
+        <h3>création d'un type de bouton en saas</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/btnscss.png">
+          </div>
+        </div>
+      </div>
+      <div class="column-l-12"><h2>Les alertes</h2>
+
+      </div>
+      <div class="column-l-6"><h3>importer le mixin</h3>
+      <div class="gallery">
+        <div class="elem">
+          <img src="../img/alertmixin.png">
+        </div>
+        </div>
+        <div>
+
+      </div>
+      </div>
+      <div class="column-l-6">
+        <h3>création d'un type d'alert en saas</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/alertscss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Les tableaux</h2></div>
+      <div class="column-l-6"><p>le Tableau du framework respecte la structure de html</p>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/tablemixin.png">
+          </div>
+          </div>
+          <h3>modifier le mixin</h3>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/tablescss.png">
+            </div>
+            </div>
+
+      </div>
+      <div class="column-l-6">
+        <h3>utilisation du mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/tablemixinuse.png">
+          </div>
+          </div>
+      </div>
+
+      <div class="column-l-12"><h2>Le Fil d'Ariane</h2></div>
+      <div class="column-l-6"><p>le framework met en place un fil d'ariane:</p>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/breadcrumbmixin.png">
+          </div>
+          </div>
+          <h3>modifier le mixin</h3>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/breadcrumbscss.png">
+            </div>
+            </div>
+      </div>
+      <div class="column-l-6">
+        <h3>utilisation du mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/breadcrumbuse.png">
+          </div>
+          </div>
+      </div>
+
+      <div class="column-l-12"><h2>La Galerie Photo</h2></div>
+      <div class="column-l-6"><p>le framework met en place une gallerie photo il faut bien respecter sa structure pour les images:</p>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/gallerymixin.png">
+          </div>
+          </div>
+          <h3>modifier le mixin</h3>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/galleryscss.png">
+            </div>
+            </div>
+      </div>
+      <div class="column-l-6">
+        <h3>utilisation du mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/galleryuse.png">
+          </div>
+          </div>
+      </div>
+
+      <div class="column-l-12"><h2>Le Formulaire</h2></div>
+      <div class="column-l-6"><p>le framework met en place une gestion de formulaire. il faut bien respecter sa structure:</p>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/formmixin.png">
+          </div>
+          </div>
+          <h3>modifier le mixin</h3>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/formscss.png">
+            </div>
+            </div>
+    </div>
+      <div class="column-l-6">
+        <h3>utilisation du mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/formuse.png">
+          </div>
+          </div>
+      </div>
+      <div class="column-l-12"><h2>La Pagination</h2></div>
+      <div class="column-l-6"><p>le framework met en place une pagination. il faut bien respecter sa structure:</p>
+        <h3>importer le mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/paginationmixin.png">
+          </div>
+          </div>
+          <h3>modifier le mixin</h3>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/paginationscss.png">
+            </div>
+            </div>
+      </div>
+      <div class="column-l-6">
+        <h3>utilisation du mixin</h3>
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/paginationuse.png">
+          </div>
+          </div>
+      </div>
+
+  </div>
+  </body>
+  <footer>
+    <div class="rack">
+      <div class="column-l-12">  <p>un site créer par Quentin Parmentier avec SASSFR</p></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="../js/navbar.js" type="text/javascript" charset="utf-8"></script>
+  </footer>
+</html>

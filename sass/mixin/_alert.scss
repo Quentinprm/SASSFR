@@ -1,0 +1,6 @@
+@mixin alert($color:#505050,$font-style: italic bold){
+  width:100%;
+	height: auto;
+	font-style:$font-style;
+  color: $color;
+}

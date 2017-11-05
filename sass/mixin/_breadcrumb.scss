@@ -1,0 +1,31 @@
+@mixin breadcrumb($color: #505050,$hover-color:dodgerblue){
+  list-style: none;
+  padding-left:0;
+  li{
+    display: inline;
+    text-transform: uppercase;
+    &:last-child::after{
+        content:'';
+    }
+    &::after {
+      content: '>>';
+      color:$color;
+  }
+  }
+  a{
+    color:$color;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+      color:$hover-color;
+    }
+
+
+
+}
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}

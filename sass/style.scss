@@ -1,0 +1,69 @@
+@import "../sass/mixin/_init.scss";
+@import "../sass/mixin/_typo.scss";
+@import"../sass/mixin/_grid.scss";
+@import "../sass/mixin/_btn.scss";
+@import"../sass/mixin/_alert.scss";
+@import "../sass/mixin/_navbar.scss";
+@import "../sass/mixin/_breadcrumb.scss";
+@import"../sass/mixin/_gallery.scss";
+@import"../sass/mixin/_table.scss";
+@import"../sass/mixin/_form.scss";
+@import"../sass/mixin/_pagination.scss";
+@include meyer-reset;
+@include typo (#505050,darkgray,LightSteelBlue,"Lucida Sans Typewriter" ,monospace);
+@include generategrid();
+
+  button{
+    @include btn-struct;
+  }
+  .btn{
+    @include btn-color;
+  }
+  .btn-blue{
+    @include btn-color(Lightsteelblue,Lightsteelblue);
+  }
+  .btn-red{
+    @include btn-color(IndianRed,Lightsteelblue);
+  }
+  .btn-yellow{
+    @include btn-color(Peru,Lightsteelblue);
+  }
+  .btn-green{
+    @include btn-color(Yellowgreen,Lightsteelblue);
+  }
+  .btn-disabled {
+        @include btn-disabled;
+    }
+ .alert{
+   @include alert;
+ }
+ .alert-success{
+   @include alert(green);
+ }
+ .alert-info{
+   @include alert(lightskyblue);
+ }
+ .alert-adv{
+   @include alert(Teal);
+ }
+ .alert-danger{
+   @include alert(red);
+ }
+.menu{
+  @include navbar;
+}
+.breadcrumb{
+  @include breadcrumb;
+}
+.gallery{
+  @include gallery;
+}
+table{
+  @include table;
+}
+.form{
+  @include form;
+}
+.pagination{
+  @include pagination;
+}

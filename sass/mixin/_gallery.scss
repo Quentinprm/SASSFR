@@ -1,0 +1,19 @@
+@mixin gallery($width: 100%,$padding: 5px,$transform: scale(1.1)){
+  width: 100%;
+  .elem{
+    display:block;
+    float:left;
+    width:$width;
+    height:auto;
+    padding: $padding;
+    box-sizing: border-box;
+    img{
+      width:100%;
+      transition: 0.5s ease;
+      &:hover{
+        transform:$transform;
+      }
+    }
+  }
+
+}

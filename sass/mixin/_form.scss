@@ -1,0 +1,31 @@
+@mixin form($lab: 20%, $inf: 70%,$border-color: #ccc) {
+    .li {
+        label {
+          display: inline-block;
+          float: left;
+          width: $lab;
+          margin-top: 5px;
+          padding: 7px 7px 7px 0;
+            box-sizing: border-box;
+        }
+        input[type=text], select, textarea {
+          width: $inf;
+          margin-top: 5px;
+          padding: 7px;
+            box-sizing: border-box;
+            float: left;
+            border: 1px solid $border-color;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 767px) {
+            input[type=text], select, textarea, label{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+}

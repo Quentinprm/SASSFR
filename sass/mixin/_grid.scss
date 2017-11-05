@@ -1,0 +1,69 @@
+@mixin rack($display:flex,$justify-content: flex-start,$flex-wrap: wrap,$word-break: keep-all){
+  display:$display;
+  justify-content:$justify-content;
+  flex-wrap:$flex-wrap;
+  word-break:$word-break;
+}
+@mixin column($max,$nb: 1,$type: "medium",$padding: 1em){
+  padding:0 $padding 0 $padding;
+  box-sizing: border-box;
+  text-align:center;
+  @media only screen and (max-width: 280px) {
+    flex-basis: 100%;
+    }
+    @media only screen and (max-width: 767px) and (min-width: 280px) {
+      flex-basis: 100%;
+      @if($type =="small"){
+        flex-basis: 50%;
+      }
+    }
+    @media only screen and(min-width: 767px) and (max-width: 1080px){
+      @if($type =="small"){
+        flex-basis: 50%;
+      }
+      @if($type =="medium"){
+        flex-basis: 50%;
+      }
+      @if($type=="large"){
+        flex-basis:100%;
+      }
+    }
+    @media only screen and(min-width: 1080px){
+      flex-basis:percentage($nb/$max);
+    }
+}
+@mixin offset-left($max,$v:0){
+  margin-left: percentage($v/$max);
+
+}
+@mixin offset-right($max,$w:0){
+  margin-right: percentage($w/$max);
+}
+@mixin generategrid($nbcolumn:12){
+  .rack{
+    @include rack;
+    @for $i from 1 through $nbcolumn {
+      .column-s-#{$i}{
+        @include column($nbcolumn,$i,"small");
+      }
+      .column-m-#{$i}{
+        @include column($nbcolumn,$i,"medium");
+      }
+      .column-l-#{$i}{
+        @include column($nbcolumn,$i,"large");
+      }
+
+    }
+    @for $i from 1 through $nbcolumn {
+      .offset-left-#{$i}{
+        @include offset-left($nbcolumn,$i);
+      }
+    }
+    @for $i from 1 through $nbcolumn {
+      .offset-right-#{$i}{
+        @include offset-right($nbcolumn,$i);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+@mixin table($color: #505050,$border-color: black,$background-color-hover: dodgerblue, $hover-color:white,$background-color-nt:#808080 ){
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid $border-color;
+  margin:0 auto 0 auto;
+  padding: 0;
+  width:100%;
+  color: $color;
+  th, td {
+    border: 1px solid $border-color;
+    &:hover{
+      background-color:$background-color-hover;
+      color:$hover-color;
+    }
+
+}
+tr{
+  &:nth-child(2n){
+      background-color:$background-color-nt;
+  }
+}
+}

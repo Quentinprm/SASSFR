@@ -1,0 +1,140 @@
+@mixin navbar($background-color-menu: dodgerblue,$height: 60px,$padding: 0 5px 0,$icon-bar-background: #fff,$link-color: white,$link-color-active: black,$li-color-active: white,$li-color-hover: deepskyblue){
+  #menu {
+  	background: $background-color-menu;
+  	height: $height;
+  	padding: $padding;
+  	text-align: center;
+    position:fixed;
+    top:0;
+  	z-index: 999;
+    width:100%;
+  }
+  .navbar-header{
+  	 position: relative;
+  	 display: none;
+  }
+  .navbar-toggle{
+  	 float: left;
+  	  padding: 9px 10px;
+  	  margin-top: 8px;
+  	  margin-right: 15px;
+  	  margin-bottom: 8px;
+  	  background-color: transparent;
+  	  background-image: none;
+  	  border: 1px solid transparent;
+  	  border-radius: 4px;
+  	  cursor:pointer;
+
+      .icon-bar{
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background: $icon-bar-background;
+      }
+      .icon-bar + .icon-bar{
+        margin-top:4px;
+      }
+      &:focus{
+        outline: 0;
+      }
+  }
+  #navbar{
+  	display: block;
+
+  }
+  .navbar{
+    ul li.active{
+    	background-color:$li-color-active;
+      a{
+        color:$link-color-active;
+      }
+    }
+    ul {
+    	list-style: none;
+    	margin: 0;
+    	padding: 0;
+      li{
+        display: inline-block;
+      	width: 84px;
+      	text-align: center;
+        a{
+          color: $link-color;
+        	width: 100%;
+        	line-height: 60px;
+        	text-decoration: none;
+        	text-transform: uppercase;
+        }
+
+
+        &:hover{
+          background: $li-color-hover;
+        }
+      }
+    }
+  }
+
+  select {
+  	width: 94%;
+  	margin: 11px  0 11px 2%;
+  	float: left;
+  }
+  @media only screen and (max-width: 767px) {
+
+  	.navbar-header{
+  		display: block;
+
+      &:after{
+        content:"";
+    		display: table;
+    		clear:both;
+      }
+  	}
+  	a{
+  	line-height: initial;
+
+  	}
+  	#navbar{
+  		width:100%;
+  		background:$background-color-menu;
+  		position: relative;
+  		top: 12px;
+  	    left: -7px;
+  	    display: none;
+  	}
+  	#menu {
+  			width:100%;
+  			display: block;
+  			font-size:1.25em;
+  			text-align: center;
+        .nav{
+          ul {
+      			width:100%;
+      			list-style:none;
+            &:after{
+              content: "";
+        			display: table;
+        			clear: both;
+            }
+      		}
+          li {
+      			width:100%;
+      			border-right:none;
+            display:block;
+    		    width:100%;
+    		    float:none;
+    		    padding: 10px;
+    		    border-radius: 0px;
+    		    border-bottom: 1px solid white;
+      		}
+          ul li a {
+      			line-height: 20px;
+
+      		}
+        }
+  		}
+
+
+  	}
+
+}
