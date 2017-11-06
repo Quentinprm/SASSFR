@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SASSFR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <header>
+    <div class="menu">
+      <nav id="menu" class="navbar navbar-default">
+      <div class="container">
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html">Acceuil</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li class="active"><a href="css.html">CSS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="rack">
+      <div class="column-l-12"><h1>Documentation CSS</h1></div>
+      <div class="column-l-12"><p class ="subtitle">retrouver ici la documentation dans sa version CSS du framework</p></div>
+      <div class="column-l-12">
+        <button class="btn-green">
+         <a href="../sources/css.zip">Télécharger .zip en css</a>
+         </button>
+      </div>
+    </div>
+  </div>
+  </header>
+  <body>
+    <div class="rack">
+      <div class="column-l-12"><h2>La Grille</h2></div>
+      <div class="column-l-6"><p>il s'agit d'une grille responsive de 12 colonnes qui se redimensionne en fonction de la taille de l'écran et de la classe choisie.</p><p>On choisit le style de colonne avec s,m,l(small,medium,large)et le nombre des 12 colonne qu'on prend.</p><p>Ici on a column-l-12 ce qui veut dire une colonne de type large qui prendra la place de 12 sur la grille en largeur</p></p>on peu ajouter un décallage à droite ou à gauche de la colonne avec les classes offset-left et offset-right en donnant de la meme façon le nombre de colonne de décalage en largeur</p></div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/grillecss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Le Menu</h2></div>
+      <div class="column-l-6"><p>il s'agit d'un menu responsive qui se redimensionne en fonction de la taille de l'écran</p><p> il ne faut pas oublier d'inserer les 2 imports pour le menu déroulant</p><p> il s'agit du menu utilisé sur ce site</p></div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/navcss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Les boutons</h2></div>
+      <div class="column-l-6"><p>le frameworks a plusieur bouton prédéfinis</p>
+        <div>
+        <button class="btn"><a href="">bouton-defaut</a></button>
+        <button class="btn-blue"><a href="">bouton-bleu</a></button>
+        <button class="btn-red"><a href="">bouton-rouge</a></button>
+        <button class="btn-yellow"><a href="">bouton-jaune</a></button>
+        <button class="btn-green"><a href="">bouton-vert</a></button>
+      </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/btncss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Les alertes</h2></div>
+      <div class="column-l-6"><p>le frameworks a plusieur alertes prédéfinis appliquable à toute balise</p>
+        <div>
+        <div class="alert">alert-defaut</div>
+        <div class="alert-success">alert-success</div>
+        <div class="alert-info">alert-info</div>
+        <div class="alert-adv">alert-avertissement</div>
+        <div class="alert-danger">alert-danger</div>
+      </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/alertcss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Les tableaux</h2></div>
+      <div class="column-l-6"><p>le Tableau du framework respecte la structure de html</p>
+      </div>
+      <div class="column-l-6">
+        <table>
+           <tr>
+               <td>Quentin</td>
+               <td>21 ans</td>
+               <td>France</td>
+           </tr>
+           <tr>
+             <td>Quentin</td>
+             <td>21 ans</td>
+             <td>France</td>
+           </tr>
+           <tr>
+             <td>Quentin</td>
+             <td>21 ans</td>
+             <td>France</td>
+           </tr>
+           <tr>
+             <td>Quentin</td>
+             <td>21 ans</td>
+             <td>France</td>
+           </tr>
+           <tr>
+             <td>Quentin</td>
+             <td>21 ans</td>
+             <td>France</td>
+           </tr>
+        </table>
+      </div>
+
+      <div class="column-l-12"><h2>Le Fil d'Ariane</h2></div>
+      <div class="column-l-6"><p>le framework met en place un fil d'ariane:</p>
+        <div class="breadcrumb">
+       <ul>
+         <li><a href="">Lorem.</a></li>
+         <li><a href="">Minima.</a></li>
+         <li><a href="">Soluta!</a></li>
+         <li><a href="">Excepturi.</a></li>
+         <li><a href="">Maxime.</a></li>
+       </ul>
+     </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/breadcrumbcss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>La Galerie Photo</h2></div>
+      <div class="column-l-6"><p>le framework met en place une gallerie photo il faut bien respecter sa structure pour les images:</p>
+          <div class="gallery">
+            <div class="elem">
+              <img src="../img/gallery2.jpg">
+            </div>
+            <div class="elem">
+              <img src="../img/gallery3.jpg">
+            </div>
+            <div class="elem">
+              <img src="../img/gallery4.jpg">
+            </div>
+          </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/gallerycss.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="column-l-12"><h2>Le Formulaire</h2></div>
+      <div class="column-l-6"><p>le framework met en place une gestion de formulaire. il faut bien respecter sa structure:</p>
+        <div class="form">
+          <form action="">
+            <div class="li">
+              <label>Nom</label>
+              <input type="text" name="nom" placeholder="nom">
+            </div>
+            <div class="li">
+              <label>Prenom</label>
+              <input type="text" name="prenom" placeholder="prenom">
+            </div>
+            <div class="li">
+              <label>Aimez vous ce framework</label>
+              <select name="like">
+                <option selected="selected">Choisir</option>
+                <option value="oui">oui</option>
+                <option value="non">non</option>
+              </select>
+            </div>
+          </form>
+      </div>
+    </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/formulairecss.png">
+          </div>
+        </div>
+      </div>
+      <div class="column-l-12"><h2>La Pagination</h2></div>
+      <div class="column-l-6"><p>le framework met en place une pagination. il faut bien respecter sa structure:</p>
+        <div class="pagination">
+          <ul>
+            <li><a class="prev" href="">Prev</a></i>
+            <li><a href="">1</a></i>
+            <li><a href="">2</a></i>
+            <li class="active"><a href="">3</a></i>
+            <li><a href="">4</a></i>
+            <li><a href="">5</a></i>
+            <li><a href="">6</a></i>
+            <li><a href="">7</a></i>
+            <li><a class="next" href="">Next</a></i>
+          </ul>
+        </div>
+      </div>
+      <div class="column-l-6">
+        <div class="gallery">
+          <div class="elem">
+            <img src="../img/paginationcss.png">
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </body>
+    <footer>
+      <div class="rack">
+        <div class="column-l-12">  <p>un site créer par Quentin Parmentier avec SASSFR</p></div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/navbar.js" type="text/javascript" charset="utf-8"></script>
+    </footer>
+</html>
