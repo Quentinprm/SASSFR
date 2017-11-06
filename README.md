@@ -12,5 +12,5 @@ pour voir un exemple d'utilisation du site ainsi qu'un guide allez dans le dossi
 Pour que le framework marche n'oublier pas d'inclure dans la balise <head> de vos pages html la ligne suivante: 
  <meta name="viewport" content="width=device-width" />
 # retrouvez un site exemple ainsi qu'un guide en cliquant sur le lien ci-dessous:
- # SASSFR
+https://quentinprm.github.io/SASSFR/html/home
   
